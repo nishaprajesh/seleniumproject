@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="front-end">
+    <classes>
+      <class name="AdvancedTestNG.TestUI"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+
+  <test name="Backend">
+    <classes>
+      <class name="AdvancedTestNG.TestDatabase"/>
+       <class name="AdvancedTestNG.TestSecurity"/>
+        <class name="AdvancedTestNG.Testshipping"/>
+          <class name="AdvancedTestNG.Advtestng"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

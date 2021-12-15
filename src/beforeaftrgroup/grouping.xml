@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+   <groups>
+   <run>
+   <!--  <include name="UI"> </include> -->
+   <exclude name="UI"> </exclude>
+    </run>
+    </groups>
+    <classes>
+      <class name="beforeaftrgroup.BFgrouping"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test1">
+  <parameter name="browser" value="Chrome">
+  </parameter>
+    <classes>
+      <class name="AdvancedTestNG.testresultcontext"/>
+      <methods>
+      <include name="testDeluser">
+      </include>
+      </methods>
+    </classes>
+  </test> <!-- Test -->
+   
+
+</suite> <!-- Suite -->

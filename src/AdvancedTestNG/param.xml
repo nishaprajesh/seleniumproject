@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test1">
+  <parameter name="browser" value="Chrome">
+  </parameter>
+  <parameter name="username" value="standard_user">
+  </parameter>
+  <parameter name="password" value="secret_sauce">
+  </parameter>
+  
+    <classes>
+      <class name="AdvancedTestNG.Parameterize"/>
+       </classes>
+  </test> <!-- Test -->
+   
+
+</suite> <!-- Suite -->
+
+

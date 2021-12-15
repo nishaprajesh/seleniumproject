@@ -1,0 +1,51 @@
+package Webdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class xpath {
+
+
+	public static void main(String[] args) throws InterruptedException {
+	//Launch the chrome  browser
+	System.setProperty("webdriver.chrome.driver","C:\\Automation\\Software\\Drivers\\chromedriver.exe");
+	
+	WebDriver driver=new ChromeDriver();
+	
+	// GO to URL https://www.google.com
+	driver.get("https://login.yahoo.com/account/create");
+	
+	//Enter First name --Uses absolute xpath
+	driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/form[1]/fieldset[1]/div[1]/div[1]/input[1]")).sendKeys("Nisha");
+			
+	//Enter second name-- Relative xpath syntax1 //tagname[@locator1='value of the locator']
+	driver.findElement(By.xpath("//input[@id='usernamereg-lastName']")).sendKeys("Lastname");
+					
+	//Enter email id-- Relative xpath syntax3  //tagname[@locator1='value of the locator'  or @locator2='value of the locator']
+	
+	driver.findElement(By.xpath("//input[@name='yid' or id='usernamereg-yid']")).sendKeys("test");
+	//Enter password
+	
+	//Select drop down country code
+	//Enter mobile number 
+	//Select drop down Birth Month
+	
+	//Enter day 
+	driver.findElement(By.xpath("(//input[@type='tel'])[2]")).sendKeys("1");
+	//Enter year
+	driver.findElement(By.xpath("(//input[@type='tel'])[3]")).sendKeys("2000");
+	//Enter Gender
+	driver.findElement(By.xpath("//*[@name='freeformGender']")).sendKeys("F");
+		//Click on Continue 
+	
+	
+	//Wait for 5 seconds
+	Thread.sleep(5000);
+	
+	//Print the page title
+	String pagetitle=driver.getTitle();
+	System.out.println(pagetitle);
+	
+	}
+}
